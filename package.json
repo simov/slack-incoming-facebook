@@ -1,0 +1,25 @@
+{
+  "name": "incoming-webhooks",
+  "version": "0.0.0",
+  "description": "Incoming WebHooks",
+  "private": true,
+  "keywords": [],
+  "license": "MIT",
+  "homepage": "https://github.com/simov/slack",
+  "author": "Simeon Velichkov <simeonvelichkov@gmail.com> (http://simov.github.io)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simov/slack.git"
+  },
+  "dependencies": {
+    "@request/client": "^0.1.0",
+    "purest": "^3.0.0"
+  },
+  "devDependencies": {},
+  "main": "",
+  "files": [],
+  "scripts": {},
+  "engines": {
+    "node": ">=4.0.0"
+  }
+}

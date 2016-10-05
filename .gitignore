@@ -1,0 +1,5 @@
+npm-debug.log
+config/db.json
+config/index.json
+coverage/
+node_modules/
