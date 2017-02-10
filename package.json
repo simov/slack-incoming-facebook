@@ -21,7 +21,13 @@
     "slack-webhook-facebook": "./bin/"
   },
   "main": "./lib/",
-  "files": [],
+  "files": [
+    "bin/",
+    "config/",
+    "lib/",
+    "LICENSE",
+    "README.md"
+  ],
   "scripts": {},
   "engines": {
     "node": ">=6.0.0"
