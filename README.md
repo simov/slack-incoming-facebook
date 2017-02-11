@@ -5,7 +5,7 @@
 npm install -g slack-webhook-facebook
 ```
 
-# Usage
+# CLI
 
 ```bash
 slack-webhook-facebook \
@@ -21,13 +21,13 @@ slack-webhook-facebook \
   "development": {
     "facebook": {
       "id": "[Group ID]",
-      "token": "[Access Token]"
+      "token": "[OAuth Access Token]"
     },
     "slack": {
-      "hook": "[Hook URL]", // or ["hook1", "hookN"]
-      "username": "[attachment username]",
-      "icon_url": "[attachment avatar]",
-      "channel": "[target channel or user]"
+      "hook": "[Hook URL]", // or ["[Hook URL 1]", "[Hook URL N]"]
+      "username": "[Bot Name]",
+      "icon_url": "[Bot Avatar]",
+      "channel": "[Target Channel or User]"
     }
   }
 }
