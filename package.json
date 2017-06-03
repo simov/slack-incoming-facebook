@@ -1,23 +1,26 @@
 {
-  "name": "slack-webhook-facebook",
+  "name": "slack-incoming-facebook",
   "version": "1.0.0",
-  "description": "Slack Incomming WebHook for Facebook",
-  "keywords": [],
+  "description": "Slack Incoming WebHook for Facebook",
+  "keywords": [
+    "slack",
+    "facebook"
+  ],
   "license": "MIT",
-  "homepage": "https://github.com/simov/slack-webhook-facebook",
+  "homepage": "https://github.com/simov/slack-incoming-facebook",
   "author": "Simeon Velichkov <simeonvelichkov@gmail.com> (https://simov.github.io)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/simov/slack-webhook-facebook.git"
+    "url": "https://github.com/simov/slack-incoming-facebook.git"
   },
   "dependencies": {
     "@request/client": "^0.1.0",
     "minimist": "^1.2.0",
-    "purest": "^3.0.1"
+    "purest": "^3.1.0"
   },
   "devDependencies": {},
   "bin": {
-    "slack-webhook-facebook": "./bin/"
+    "slack-incoming-facebook": "./bin/"
   },
   "main": "./lib/",
   "files": [
