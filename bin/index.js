@@ -16,12 +16,9 @@ if (argv.help) {
   }
 })
 
-
-var path = require('path')
-
-
 var env = process.env.NODE_ENV || argv.env || 'development'
 
+var path = require('path')
 var config = require(path.resolve(process.cwd(), argv.config))[env]
 
 var dbpath = path.resolve(process.cwd(), argv.db)
@@ -30,12 +27,15 @@ var db = require(dbpath)
 
 var hook = require('../')
 
-hook({env, config, db, dbpath})
+var log = (res, body) => [
+  new Date().toString(),
+  res.statusCode,
+  res.statusMessage,
+  typeof body === 'object' ? JSON.stringify(body) : body
+].join(' ')
+
+hook({db, env, dbpath, config})
   .then((responses) => {
-    responses.forEach(([res, body]) => {
-      res.statusCode === 200
-        ? console.log(hook.log(res, body))
-        : console.error(new Error(hook.log(res, body)))
-    })
+    responses.forEach(([res, body]) => console.log(log(res, body)))
   })
-  .catch((err) => console.error(new Date().toString(), err))
+  .catch((err) => console.error(err))
