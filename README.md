@@ -28,7 +28,8 @@ slack-incoming-facebook \
   "development": {
     "facebook": {
       "id": "[Organization Screen Name]",
-      "token": "[OAuth Access Token]"
+      "token": "[OAuth Access Token]",
+      "types": ["post types to include (optional)"]
     },
     "slack": { "see below" }
   }
